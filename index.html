@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="home">
+      <div class="container">
+        <div id="barra_superior">
+          <h2 id="title"></h2>
+          <div id="linea"></div>
+        </div>
+        <div class="ubicacion">
+          <div class="lado_izquierdo">
+            <div id="border_datos">
+              <div id="contenido"></div>
+            </div>
+            <div class="container">
+              <h2 id="perfil">PERFIL</h2>
+              <div id="container">
+                <p>
+                  Soy una persona organizada que cumple con los labores y
+                  requerimientos que se le exigen, con capacidad, puntualidad,
+                  responsabilidad y buena presencia. Me considero una persona
+                  seria al momento de trabajar y con altas expectativas en
+                  crecer laboralmente.
+                </p>
+              </div>
+              <h2 id="perfil">FORMACIÓN</h2>
+              <div id="container">
+                <p id="negrita">
+                  Cursando Programador Universitario <br />
+                  Facultad Ciencias Exactas
+                  <br /><br />
+                </p>
+                <p id="negrita">Secundario Completo - 2017</p>
+                <p>Esc. Tecnica de Vialidad Nacional Gral. Belgrano</p>
+              </div>
+
+              <div>
+                <h2 id="perfil">EXPERIENCIA LABORAL</h2>
+                <div id="container">
+                  <p>Diciembre 2018 - Actualidad</p>
+                  <p id="negrita">
+                    Soporte Atencion al cliente y soporte tecnico de Cablevisión
+                    Fibertel (Teleperfomance)
+                  </p>
+                  <br />
+                  <p>Temporada Enero 2015 - Marzo 2018</p>
+                  <p id="negrita">
+                    Cantina de Bebida y Mozo en eventos en Tafí del Valle
+                  </p>
+                  <br />
+                  <p>Marzo a Diciembre 2015</p>
+                  <p id="negrita">Lavadero de Autos en Yerba Buena</p>
+                  <br />
+                  <p>Febrero a Diciembre 2014</p>
+                  <p id="negrita">Atencion al cliente en un Drugstore</p>
+                </div>
+              </div>
+
+              <div class="container">
+                <h2 id="perfil">OBJETIVOS</h2>
+                <div id="container">
+                  <p>
+                    Busco explorar y desarrollarme dentro de su empresa, para
+                    adquirir experiencias en conjunto a los conocimientos y
+                    herramientas brindadas por la misma.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="btn" id="botton">Traer Datos</button>
+          </div>
+
+          <div class="lado_izquierdo">
+            <div id="campo_izquierdo">
+              <div id="propiedades">
+                <div id="img"></div>
+                <br />
+                <p id="propiedadesDos"></p>
+
+                <div>
+                  <h3 id="perfil">APTITUDES</h3>
+                  <button id="boton" onclick="mostrar()">Mostrar</button>
+                  <ul id="aptitudes">
+                    <li>Ser proactivo</li>
+                    <li>Ser Multifacetico</li>
+                    <li>Ser Team Player</li>
+                    <li>Tener ganas de trabajar</li>
+                    <button id="boton" onclick="ocultar()">Ocultar</button>
+                  </ul>
+                  <br />
+                  <h3 id="perfil">DATOS DE INTERÉS</h3>
+
+                  <p>Titulo de Tecnico Vial</p>
+                  <p>Carnet de manejo: Tipo B</p>
+                  <p>Manejo de herramientas de Oficina</p>
+                  <p>Disponibilidad: Full Time</p>
+
+                  <br />
+                  <br />
+                  <h3 id="perfil">HABILIDADES</h3>
+                  <button id="boton" onclick="mostrarhabilidades()">
+                    Mostrar
+                  </button>
+                  <ul id="habilidades">
+                    <li>Informatica</li>
+                    <li>Hardware</li>
+                    <li>Software</li>
+                    <li>Word</li>
+                    <li>Power POint</li>
+                    <li>Publisher</li>
+                    <li>Redes Sociales</li>
+                    <li>Excel</li>
+                    <button id="boton" onclick="ocultarhabilidades()">
+                      Ocultar
+                    </button>
+                  </ul>
+                  <br />
+                  <br />
+                  <h3 id="perfil">IDIOMAS</h3>
+                  <ul>
+                    <li>Español</li>
+                    <li>Ingles</li>
+                    <br />
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="botones">
+      <div class="formulario">
+        <input type="checkbox" id="btn-modal" />
+        <label for="btn-modal" class="lbl-modal">CONTACTARSE</label>
+        <div id="modal">
+          <div id="contenedor-modal">
+            <header>Contactarse</header>
+            <label for="btn-modal" id="label-Uno">X</label>
+            <div id="contenido-modal">
+              <form
+                action="https://formsubmit.co/gabrielbrgn4701@gmail.com"
+                method="POST"
+                id="formulario"
+              >
+                <label for="Nombre" id="formulario">Nombre</label>
+                <input type="text" name="name" />
+
+                <label for="email" id="formulario">Correo Electronico</label>
+                <input type="email" name="email" />
+
+                <label for="subject" id="formulario">Asunto</label>
+                <input type="text" name="subject" />
+
+                <label for="comments" id="formulario">Contactarse</label>
+                <textarea name="comments" cols="55" rows="10"></textarea>
+
+                <input type="submit" value="Enviar" id="boton-dos" />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="http://127.0.0.1:5500"
+                />
+                <input type="hidden" name="_captcha" value="false" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="whatsapp">
+        <a class="btn-btn-wsp" href="https://web.whatsapp.com" target="_blank"
+          >whatsapp</a
+        >
+      </div>
+    </div>
+
+    <script src="ajax.js"></script>
+  </body>
+</html>
